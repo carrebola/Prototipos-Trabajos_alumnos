@@ -21,17 +21,7 @@ https://cdn.jsdelivr.net/npm/bootswatch@5.2.3/dist/superhero/bootstrap.min.css
 		<!-- Iconos Feather -->
 		<script src="https://unpkg.com/feather-icons"></script>
 
-		<style>
-			/* avatarLogin */
-			.avatarLogin {
-				width: 40px;
-				height: 40px;
-				border: 1px solid white;
-				background-image: url(../public/login.svg);
-				background-size: cover;
-				border-radius: 50%;
-			}
-		</style>
+		<link rel="stylesheet" href="estilos.css">
 	</head>
 	<body>
 		<header>
@@ -40,7 +30,7 @@ https://cdn.jsdelivr.net/npm/bootswatch@5.2.3/dist/superhero/bootstrap.min.css
 				<div class="container-fluid">
 					<a class="navbar-brand d-flex align-items-center" href="home.html">
 						<img
-							src="../public/logo.svg"
+							src="../public/images/logo.svg"
 							alt="Logo"
 							width="50"
 							height="50"
@@ -70,6 +60,8 @@ https://cdn.jsdelivr.net/npm/bootswatch@5.2.3/dist/superhero/bootstrap.min.css
 							<li class="nav-item">
 								<a class="nav-link" href="registro.html">Registro</a>
 							</li>
+							<li><hr /></li>
+							<hr />
 							<li class="nav-item">
 								<a class="nav-link" href="adminUsuarios.html">Admin</a>
 							</li>
@@ -95,6 +87,16 @@ https://cdn.jsdelivr.net/npm/bootswatch@5.2.3/dist/superhero/bootstrap.min.css
 									<a class="dropdown-item" href="registro.html">Registrate</a>
 								</li>
 								<li>
+									<a
+										data-bs-toggle="modal"
+										data-bs-target="#editar"
+										class="dropdown-item"
+										href="editarPerfil.html"
+										>Editar perfil</a
+									>
+								</li>
+								<div class="dropdown-divider"></div>
+								<li>
 									<a class="dropdown-item" href="admin.html">Admin Usuarios</a>
 								</li>
 							</ul>
@@ -102,13 +104,61 @@ https://cdn.jsdelivr.net/npm/bootswatch@5.2.3/dist/superhero/bootstrap.min.css
 					</ul>
 				</div>
 			</nav>
+
+			<!-- Modal -->
+			<div class="modal fade" id="editar">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">Editar usuario</h5>
+							<button
+								type="button"
+								class="btn-close"
+								data-bs-dismiss="modal"
+								aria-label="Close"
+							>
+								<span aria-hidden="true"></span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<form class="p-3">
+								<label class="mt-3 form-label" for="nick">Nick: </label>
+								<input type="text" class="form-control" value="Charly" />
+
+								<label class="mt-3 form-label" for="email">Email</label>
+								<input
+									type="email"
+									class="form-control"
+									value="email@gmail.com"
+								/>
+
+								<label class="mt-3 form-label" for="nick">Contraseña: </label>
+								<input type="password" class="form-control" value="123456" />
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-primary">
+								Guardar cambios
+							</button>
+							<button
+								type="button"
+								class="btn btn-secondary"
+								data-bs-dismiss="modal"
+							>
+								Cerrar
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
 		</header>
 		<main style="padding-top: 100px">
 			<div class="container mt-5">
 				<h1>Administración de usuarios</h1>
-				<table class="table table-striped table-hover mt-5">
+				<table class="table table-striped table-hover mt-5 align-middle">
 					<thead>
 						<tr>
+							<th></th>
 							<th>NICK</th>
 							<th>EMAIL</th>
 							<th></th>
@@ -116,6 +166,9 @@ https://cdn.jsdelivr.net/npm/bootswatch@5.2.3/dist/superhero/bootstrap.min.css
 					</thead>
 					<tbody>
 						<tr>
+							<td>
+								<img src="../public/images/avatar1.svg" width="50" alt="" />
+							</td>
 							<td>Charly</td>
 							<td>carly@gmail.com</td>
 							<td class="text-end">
@@ -134,11 +187,13 @@ https://cdn.jsdelivr.net/npm/bootswatch@5.2.3/dist/superhero/bootstrap.min.css
 									data-bs-target="#editar"
 								>
 									<i data-feather="trash-2" class="me-2"></i>
-
 								</button>
 							</td>
 						</tr>
 						<tr>
+							<td>
+								<img src="../public/images/avatar1.svg" width="50" alt="" />
+							</td>
 							<td>Manu</td>
 							<td>manu@gmail.com</td>
 							<td class="text-end">
@@ -157,11 +212,13 @@ https://cdn.jsdelivr.net/npm/bootswatch@5.2.3/dist/superhero/bootstrap.min.css
 									data-bs-target="#editar"
 								>
 									<i data-feather="trash-2" class="me-2"></i>
-
 								</button>
 							</td>
 						</tr>
 						<tr>
+							<td>
+								<img src="../public/images/avatar1.svg" width="50" alt="" />
+							</td>
 							<td>Charly</td>
 							<td>carly@gmail.com</td>
 							<td class="text-end">
@@ -180,11 +237,13 @@ https://cdn.jsdelivr.net/npm/bootswatch@5.2.3/dist/superhero/bootstrap.min.css
 									data-bs-target="#editar"
 								>
 									<i data-feather="trash-2" class="me-2"></i>
-
 								</button>
 							</td>
 						</tr>
 						<tr>
+							<td>
+								<img src="../public/images/avatar1.svg" width="50" alt="" />
+							</td>
 							<td>Manu</td>
 							<td>manu@gmail.com</td>
 							<td class="text-end">
@@ -203,67 +262,11 @@ https://cdn.jsdelivr.net/npm/bootswatch@5.2.3/dist/superhero/bootstrap.min.css
 									data-bs-target="#editar"
 								>
 									<i data-feather="trash-2" class="me-2"></i>
-
 								</button>
 							</td>
 						</tr>
 					</tbody>
 				</table>
-
-				<!-- Button trigger modal -->
-				<button
-					type="button"
-					class="btn btn-primary"
-					data-bs-toggle="modal"
-					data-bs-target="#editar"
-				>
-					Launch demo modal
-				</button>
-
-				<!-- Modal -->
-				<div class="modal fade" id="editar">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title">Editar usuario</h5>
-								<button
-									type="button"
-									class="btn-close"
-									data-bs-dismiss="modal"
-									aria-label="Close"
-								>
-									<span aria-hidden="true"></span>
-								</button>
-							</div>
-							<div class="modal-body">
-								<form class="p-3">
-                                    <label class="mt-3 form-label" for="nick">Nick: </label>
-                                    <input type="text" class="form-control" value="Charly" />
-                
-                                    <label class="mt-3 form-label" for="email">Email</label>
-                                    <input type="email" class="form-control" value="email@gmail.com" />
-                
-                                    <label class="mt-3 form-label" for="nick">Contraseña: </label>
-                                    <input type="password" class="form-control" value="123456" />
-                
-                                    
-                                </form>
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-primary">
-									Save changes
-								</button>
-								<button
-									type="button"
-									class="btn btn-secondary"
-									data-bs-dismiss="modal"
-								>
-									Close
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
 			</div>
 		</main>
 
