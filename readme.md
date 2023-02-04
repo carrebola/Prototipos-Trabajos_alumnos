@@ -11,6 +11,8 @@
 
 ## Recursos
 - [Crear el archivo readme.md](https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/archivo-readme/)
+- [Versionado con git](https://www.youtube.com/watch?v=1B9iP611WUY&list=PLY1J8ju7Eq-TUBGmySQNivh2F1Yq0CgQj&index=18)
+- [Git flow básico](https://www.youtube.com/watch?v=CTM-pvIZk48)
  ## Creamos el proyecto
 - Creamos carpeta con nombre proyecto. La abrimos con vscode y abrimos un terminal.
 - Creamos el proyecto con vite: (el punto es para que cree el proyecto en la carpeta en la que estamos ubicados con vscode)
