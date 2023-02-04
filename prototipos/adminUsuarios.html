@@ -19,9 +19,7 @@ https://cdn.jsdelivr.net/npm/bootswatch@5.2.3/dist/superhero/bootstrap.min.css
 			rel="stylesheet"
 		/>
 		<!-- Iconos Feather -->
-        <script src="https://unpkg.com/feather-icons"></script>
-
-        
+		<script src="https://unpkg.com/feather-icons"></script>
 
 		<style>
 			/* avatarLogin */
@@ -118,44 +116,160 @@ https://cdn.jsdelivr.net/npm/bootswatch@5.2.3/dist/superhero/bootstrap.min.css
 					</thead>
 					<tbody>
 						<tr>
-							<td >Charly</td>
-							<td>carly@gmail.com</td>
-							<td class="text-end"><i data-feather="edit" class="text-info me-2"></i>
-                                <i data-feather="trash-2" class="text-danger me-2"></i>
-                            </td>
-                           
-						</tr>
-						<tr>
-							<td>Manu</td>
-							<td>manu@gmail.com</td>
-                            <td class="text-end"><i data-feather="edit" class="text-info me-2"></i>
-                                <i data-feather="trash-2" class="text-danger me-2"></i>
-                            </td>
-						</tr>
-                        <tr>
 							<td>Charly</td>
 							<td>carly@gmail.com</td>
-							<td class="text-end"><i data-feather="edit" class="text-info me-2"></i>
-                                <i data-feather="trash-2" class="text-danger me-2"></i>
-                            </td>
-                           
+							<td class="text-end">
+								<button
+									type="button"
+									class="btn text-info"
+									data-bs-toggle="modal"
+									data-bs-target="#editar"
+								>
+									<i data-feather="edit" class="me-2"></i>
+								</button>
+								<button
+									type="button"
+									class="btn text-danger"
+									data-bs-toggle="modal"
+									data-bs-target="#editar"
+								>
+									<i data-feather="trash-2" class="me-2"></i>
+
+								</button>
+							</td>
 						</tr>
 						<tr>
 							<td>Manu</td>
 							<td>manu@gmail.com</td>
-                            <td class="text-end"><i data-feather="edit" class="text-info me-2"></i>
-                                <i data-feather="trash-2" class="text-danger me-2"></i>
-                            </td>
+							<td class="text-end">
+								<button
+									type="button"
+									class="btn text-info"
+									data-bs-toggle="modal"
+									data-bs-target="#editar"
+								>
+									<i data-feather="edit" class="me-2"></i>
+								</button>
+								<button
+									type="button"
+									class="btn text-danger"
+									data-bs-toggle="modal"
+									data-bs-target="#editar"
+								>
+									<i data-feather="trash-2" class="me-2"></i>
+
+								</button>
+							</td>
 						</tr>
-                        
+						<tr>
+							<td>Charly</td>
+							<td>carly@gmail.com</td>
+							<td class="text-end">
+								<button
+									type="button"
+									class="btn text-info"
+									data-bs-toggle="modal"
+									data-bs-target="#editar"
+								>
+									<i data-feather="edit" class="me-2"></i>
+								</button>
+								<button
+									type="button"
+									class="btn text-danger"
+									data-bs-toggle="modal"
+									data-bs-target="#editar"
+								>
+									<i data-feather="trash-2" class="me-2"></i>
+
+								</button>
+							</td>
+						</tr>
+						<tr>
+							<td>Manu</td>
+							<td>manu@gmail.com</td>
+							<td class="text-end">
+								<button
+									type="button"
+									class="btn text-info"
+									data-bs-toggle="modal"
+									data-bs-target="#editar"
+								>
+									<i data-feather="edit" class="me-2"></i>
+								</button>
+								<button
+									type="button"
+									class="btn text-danger"
+									data-bs-toggle="modal"
+									data-bs-target="#editar"
+								>
+									<i data-feather="trash-2" class="me-2"></i>
+
+								</button>
+							</td>
+						</tr>
 					</tbody>
 				</table>
+
+				<!-- Button trigger modal -->
+				<button
+					type="button"
+					class="btn btn-primary"
+					data-bs-toggle="modal"
+					data-bs-target="#editar"
+				>
+					Launch demo modal
+				</button>
+
+				<!-- Modal -->
+				<div class="modal fade" id="editar">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Editar usuario</h5>
+								<button
+									type="button"
+									class="btn-close"
+									data-bs-dismiss="modal"
+									aria-label="Close"
+								>
+									<span aria-hidden="true"></span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<form class="p-3">
+                                    <label class="mt-3 form-label" for="nick">Nick: </label>
+                                    <input type="text" class="form-control" value="Charly" />
+                
+                                    <label class="mt-3 form-label" for="email">Email</label>
+                                    <input type="email" class="form-control" value="email@gmail.com" />
+                
+                                    <label class="mt-3 form-label" for="nick">Contraseña: </label>
+                                    <input type="password" class="form-control" value="123456" />
+                
+                                    
+                                </form>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-primary">
+									Save changes
+								</button>
+								<button
+									type="button"
+									class="btn btn-secondary"
+									data-bs-dismiss="modal"
+								>
+									Close
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</main>
 
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script>
-             feather.replace()
-        </script>
+		<script>
+			feather.replace();
+		</script>
 	</body>
 </html>
