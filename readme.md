@@ -40,6 +40,7 @@
 ### Bootstrap y Bootswatch
 - Crearmos una carpeta con los prototipos en html que construimos a partir de nuestros bocetos/mockups
 - Creamos los archivos html. Por el momento creamos estructuras de trabajo con clases de bootstrap desde cdn usando un theme especifico desde la web [Bootswatch](https://bootswatch.com/) 
+- Para los iconos usaremos [feather ](https://feathericons.com/)
 
 ```
 <!-- Bootstrap -->
@@ -49,13 +50,16 @@
     <link href="
 https://cdn.jsdelivr.net/npm/bootswatch@5.2.3/dist/superhero/bootstrap.min.css
 " rel="stylesheet">
+    <!-- Iconos -->
+    <script src="https://unpkg.com/feather-icons"></script>
 ```
 ### Header
 - Para el header crearmos una barra de navegación que permanecerá siempre enganchada en la parte superior.
 - Añadimos el logo y un icono para gestionar el menú de usuario
   ```commit navbar 1.0```
 
-
+### Prototipos
+- Creamos las páginas home, registro, login, admin
   
   
 

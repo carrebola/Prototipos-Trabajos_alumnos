@@ -18,6 +18,11 @@ https://cdn.jsdelivr.net/npm/bootswatch@5.2.3/dist/superhero/bootstrap.min.css
 "
 			rel="stylesheet"
 		/>
+		<!-- Iconos Feather -->
+        <script src="https://unpkg.com/feather-icons"></script>
+
+        
+
 		<style>
 			/* avatarLogin */
 			.avatarLogin {
@@ -60,7 +65,9 @@ https://cdn.jsdelivr.net/npm/bootswatch@5.2.3/dist/superhero/bootstrap.min.css
 					<div class="collapse navbar-collapse" id="navbarNavDropdown">
 						<ul class="navbar-nav">
 							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="home.html">Home</a>
+								<a class="nav-link active" aria-current="page" href="home.html"
+									>Home</a
+								>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="registro.html">Registro</a>
@@ -68,7 +75,6 @@ https://cdn.jsdelivr.net/npm/bootswatch@5.2.3/dist/superhero/bootstrap.min.css
 							<li class="nav-item">
 								<a class="nav-link" href="adminUsuarios.html">Admin</a>
 							</li>
-							
 						</ul>
 					</div>
 
@@ -87,7 +93,9 @@ https://cdn.jsdelivr.net/npm/bootswatch@5.2.3/dist/superhero/bootstrap.min.css
 							</a>
 							<ul class="dropdown-menu">
 								<li><a class="dropdown-item" href="login.html">Login</a></li>
-								<li><a class="dropdown-item" href="registro.html">Registrate</a></li>
+								<li>
+									<a class="dropdown-item" href="registro.html">Registrate</a>
+								</li>
 								<li>
 									<a class="dropdown-item" href="admin.html">Admin Usuarios</a>
 								</li>
@@ -97,7 +105,57 @@ https://cdn.jsdelivr.net/npm/bootswatch@5.2.3/dist/superhero/bootstrap.min.css
 				</div>
 			</nav>
 		</header>
+		<main style="padding-top: 100px">
+			<div class="container mt-5">
+				<h1>Administración de usuarios</h1>
+				<table class="table table-striped table-hover mt-5">
+					<thead>
+						<tr>
+							<th>NICK</th>
+							<th>EMAIL</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td >Charly</td>
+							<td>carly@gmail.com</td>
+							<td class="text-end"><i data-feather="edit" class="text-info me-2"></i>
+                                <i data-feather="trash-2" class="text-danger me-2"></i>
+                            </td>
+                           
+						</tr>
+						<tr>
+							<td>Manu</td>
+							<td>manu@gmail.com</td>
+                            <td class="text-end"><i data-feather="edit" class="text-info me-2"></i>
+                                <i data-feather="trash-2" class="text-danger me-2"></i>
+                            </td>
+						</tr>
+                        <tr>
+							<td>Charly</td>
+							<td>carly@gmail.com</td>
+							<td class="text-end"><i data-feather="edit" class="text-info me-2"></i>
+                                <i data-feather="trash-2" class="text-danger me-2"></i>
+                            </td>
+                           
+						</tr>
+						<tr>
+							<td>Manu</td>
+							<td>manu@gmail.com</td>
+                            <td class="text-end"><i data-feather="edit" class="text-info me-2"></i>
+                                <i data-feather="trash-2" class="text-danger me-2"></i>
+                            </td>
+						</tr>
+                        
+					</tbody>
+				</table>
+			</div>
+		</main>
 
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+             feather.replace()
+        </script>
 	</body>
 </html>
