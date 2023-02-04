@@ -31,6 +31,9 @@
 ![](public/recortes/comenzamos.png)
 
 - Creamos repositorio en git y enlazamos con nuestra cuenta de github. Lo haremos mediante las herramientas de vscode.
+- Ahora tenemos una rama *master* con el proyecto básico. Vamos a crear una rama de desarrollo *dev* a partir de la rama *master*
+
+
   
   
 
