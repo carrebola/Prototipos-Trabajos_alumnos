@@ -36,6 +36,25 @@
 - Ahora tenemos una rama *master* con el proyecto básico. Vamos a crear una rama de desarrollo *dev* a partir de la rama *master*
 - Y creamos el primer commit de desarrollo: 'Comenzamos a desarrollar'
 
+## Historia 1 - Prototipos
+### Bootstrap y Bootswatch
+- Crearmos una carpeta con los prototipos en html que construimos a partir de nuestros bocetos/mockups
+- Creamos los archivos html. Por el momento creamos estructuras de trabajo con clases de bootstrap desde cdn usando un theme especifico desde la web [Bootswatch](https://bootswatch.com/) 
+
+```
+<!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css
+    ">
+    <!-- Boostswatch -->
+    <link href="
+https://cdn.jsdelivr.net/npm/bootswatch@5.2.3/dist/superhero/bootstrap.min.css
+" rel="stylesheet">
+```
+### Header
+- Para el header crearmos una barra de navegación que permanecerá siempre enganchada en la parte superior.
+- Añadimos el logo y un icono para gestionar el menú de usuario
+- 
+
 
   
   
