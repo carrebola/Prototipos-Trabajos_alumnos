@@ -1,0 +1,9 @@
+/* avatarLogin */
+.avatarLogin {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    background-image: url(../public/images/avatar1.svg);
+    background-size: cover;
+    border-radius: 50%;
+}
