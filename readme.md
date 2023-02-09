@@ -76,6 +76,24 @@ La gráfica de git debería quedar algo así:
 - Actualizamos los formularios html para validación utilizando bootstrap
 - Creamos las funciones js para la validación de cada formulario
 - Creamos un commit para cada página
-  
+
+## Login
+- En el form simplemente comprobamos que los campos email y password se han completado y que email tiene forma de email
+- creamos el script que detecta el submit y aplicamos validación con boostrap. Dejamos el submit pendiente de ejecutar (mostramos mensaje por consola)
+
+**Commit: página_login_validacion_v1**
+## Registro
+- Idem que login pero con reglas más extrictas: 
+  - Requerimos todos los campos
+  - email correcto
+  - la contraseña tiene una expresión regular básica que cumple que debe ser más de 8 caracteres y que pueden ser letras mayusculas o minusculas
+
+**Commit: página_registro_validacion_v1**
+
+## EditarPerfil
+- Las mismas reglas que para el registro
+
+**Commit: página_editarPerfil_validacion_v1**
+
   
 
