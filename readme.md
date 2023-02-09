@@ -13,6 +13,8 @@
 - [Crear el archivo readme.md](https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/archivo-readme/)
 - [Versionado con git](https://www.youtube.com/watch?v=1B9iP611WUY&list=PLY1J8ju7Eq-TUBGmySQNivh2F1Yq0CgQj&index=18)
 - [Git flow básico](https://www.youtube.com/watch?v=CTM-pvIZk48)
+ 
+ # Inicio del proyecto
  ## Creamos el proyecto
 - Creamos carpeta con nombre proyecto. La abrimos con vscode y abrimos un terminal.
 - Creamos el proyecto con vite: (el punto es para que cree el proyecto en la carpeta en la que estamos ubicados con vscode)
@@ -36,7 +38,11 @@
 - Ahora tenemos una rama *master* con el proyecto básico. Vamos a crear una rama de desarrollo *dev* a partir de la rama *master*
 - Y creamos el primer commit de desarrollo: 'Comenzamos a desarrollar'
 
+
+# Sprint 2: Prototipos html 
 ## Historia 1 - Prototipos
+- Creamos una rama **'prototipos'** a partir de la rama **dev** para desarrollar los prototipos en html.
+- Para cada prototipo terminado crearemos un commit especifico sobre el repositorio
 ### Bootstrap y Bootswatch
 - Crearmos una carpeta con los prototipos en html que construimos a partir de nuestros bocetos/mockups
 - Creamos los archivos html. Por el momento creamos estructuras de trabajo con clases de bootstrap desde cdn usando un theme especifico desde la web [Bootswatch](https://bootswatch.com/) 
@@ -60,6 +66,16 @@ https://cdn.jsdelivr.net/npm/bootswatch@5.2.3/dist/superhero/bootstrap.min.css
 
 ### Prototipos
 - Creamos las páginas home, registro, login, admin
+
+### Pull requests sobre dev
+Cuando hemos terminado esta primera historia creamos un pull request de esta historia sobre la rama dev.
+La gráfica de git debería quedar algo así:
+
+# Sprint 3: Validación de formularios desde cliente
+- Definirmos las reglas para cada campo de formulario (tipo, requerido, patrón con expresión regular, etc)
+- Actualizamos los formularios html para validación utilizando bootstrap
+- Creamos las funciones js para la validación de cada formulario
+- Creamos un commit para cada página
   
   
 
